@@ -5,34 +5,35 @@
 
   <div class=" d-flex col col-12 ">
     <div class="container solicitud col col-4">
-      <div class="col-auto justify-content-center d-flex  align-items-end gap-3 text-center mt-4">
-        <div class="mb-3 col col-3">
+      <div class="row justify-content-center text-center mt-4">
+        <div class="mb-3 col-12 col-lg-3">
           <label for="notaMinima" class="form-label">Nota Mínima</label>
           <input type="number" class="form-control text-center" [(ngModel)]="notaMinima" placeholder="1.0" />
         </div>
-        <div class="mb-3 col col-3">
+        <div class="mb-3 col-12 col-lg-3">
           <label for="notaMaxima" class="form-label">Nota máxima</label>
           <input type="number" class="form-control text-center" [(ngModel)]="notaMaxima" placeholder="7.0" />
         </div>
-        <div class="mb-3 col col-3">
+        <div class="mb-3 col-12 col-lg-3">
           <label for="notaAprobacion" class="form-label">Nota Aprobación</label>
           <input type="number" class="form-control text-center" [(ngModel)]="notaAprobacion" placeholder="4.0" />
         </div>
       </div>
+
       <div class="col-auto justify-content-center  align-items-end gap-3 text-center">
 
-        <div class="divRange mb-3   col col-12">
+        <div class="divRange mb-3   col col-12 ">
           <label for="exigencia" class="form-label">Exigencia {{exigencia()}} %</label>
           <input type="range" class="form-range" min="0" max="100" value="60" id="exigencia" [(ngModel)]="exigencia">
           <output for="exigencia" id="valorExigencia" aria-hidden="true"></output>
         </div>
 
-        <div class="col col-12 d-flex gap-3">
-          <div class="mb-3 col col-6">
+        <div class="row justify-content-center text-center mt-4">
+          <div class="mb-3 col col-12 col-lg-6">
             <label for="puntajeMaximo" class="form-label">Puntaje Máximo</label>
             <input type="number" class="form-control text-center" [(ngModel)]="puntajeMaximo" placeholder="100" />
           </div>
-          <div class="mb-3 col col-5">
+          <div class="mb-3 col col-12 col-lg-5">
             <label for="incremento" class="form-label">Incremento</label>
             <input type="number" class="form-control text-center" [(ngModel)]="incremento" placeholder="1" />
           </div>
